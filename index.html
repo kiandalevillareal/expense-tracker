@@ -2,66 +2,47 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task List 2021</title>
+
     <link rel="stylesheet" href="index.css" />
-    <title>To-Do List</title>
   </head>
   <body>
-    <div class="main-container">
-      <div class="greeting">
-        <h2 class="welcome-message">
-          What's up, <input type="text" id="name" placeholder="Name here" />
-        </h2>
-      </div>
+    <header>
+      <h1>Task List 2021</h1>
+      <form id="main-container">
+        <input
+          type="text"
+          name="input-task"
+          id="input-task"
+          placeholder="What do you have planned?"
+        />
+        <input type="submit" id="submit-task" value="Add task" />
+      </form>
+    </header>
+    <main>
+      <section class="task-container">
+        <h2>Tasks</h2>
 
-      <!-- New Todo -->
-      <div class="create-task">
-        <h3>Create a To-Do List</h3>
-        <form id="new-task-form">
-          <h4>I have to ...</h4>
-          <input
-            type="text"
-            placeholder="Study for my Finals"
-            name="content"
-            id="content"
-          />
+        <div id="task-list">
+          <!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+        </div>
+      </section>
+    </main>
 
-          <h4>Pick a category</h4>
-          <div class="options">
-            <label>
-              <input
-                type="radio"
-                name="category"
-                id="category1"
-                value="academics"
-              />
-              <span class="bubble academics"></span>
-              <div>Academics</div>
-            </label>
-            <label>
-              <input
-                type="radio"
-                name="category"
-                id="category2"
-                value="personal"
-              />
-              <span class="bubble personal"></span>
-              <div>Personal</div>
-            </label>
-          </div>
-
-          <input type="submit" value="Add Task" />
-        </form>
-      </div>
-      <!-- End of New Todo -->
-
-      <!-- Todo List -->
-      <div class="todo-list">
-        <h3>TODO LIST</h3>
-        <div class="list" id="todo-list"></div>
-      </div>
-      <!-- End of Todo List -->
-    </div>
     <script src="index.js"></script>
   </body>
 </html>
