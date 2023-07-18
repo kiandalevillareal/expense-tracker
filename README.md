@@ -8,7 +8,7 @@ This is a simple to-do list web application built using HTML, CSS, and JavaScrip
 
 ## Demo
 
-A live demo of the application can be found _____.
+A live demo of the application can be found https://kiandalevillareal.github.io/todo-list/ 
 
 ## Features
 
