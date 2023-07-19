@@ -11,6 +11,7 @@
 
 * {
 	margin: 0;
+	padding: 0;
 	box-sizing: border-box;
 	font-family: "Poppins", sans-serif;
 }
@@ -24,10 +25,10 @@ body {
 }
 
 header {
-	padding: 2rem 1rem;
+	padding: 1rem;
 	max-width: 800px;
 	width: 100%;
-	margin: 0 auto;
+	margin: 1rem auto 0;
 }
 
 header h1{ 
@@ -47,7 +48,12 @@ input, button {
 	background: none;
 }
 
-#input-task {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+#input-task, #input-amount {
 	flex: 1 1 0%;
 	background-color: var(--darker);
 	padding: 1rem;
@@ -57,7 +63,7 @@ input, button {
 	font-size: 1rem;
 }
 
-#input-task::placeholder {
+#input-task::placeholder, #input-amount::placeholder {
 	color: var(--gray);
 }
 
@@ -91,6 +97,12 @@ main {
 	padding: 1rem;
 }
 
+.task-container .headers{
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+}
+
 .task-container h2 {
 	font-size: 1.5rem;
 	font-weight: 300;
@@ -109,9 +121,12 @@ main {
 
 .task .content {
 	flex: 1 1 0%;
+	display: flex;
+	justify-content: space-between;
 }
 
-.task .content .text {
+.task .content .text,
+.task .content .number{
 	color: var(--light);
 	font-size: 1rem;
 	width: 100%;
@@ -119,7 +134,8 @@ main {
 	transition: 0.4s;
 }
 
-.task .content .text:not(:read-only) {
+.task .content .text:not(:read-only),
+.task .content .number:not(:read-only){
 	color: var(--lightblue);
 }
 
@@ -145,7 +161,8 @@ main {
 	opacity: 0.6;
 }
 
-.task .actions .edit {
+.task .actions .edit,
+.task .actions .save {
 	background-image: linear-gradient(to right, var(--oceanblue), var(--lightblue));
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
