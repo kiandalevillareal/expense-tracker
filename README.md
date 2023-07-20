@@ -1,18 +1,25 @@
-# Simple To-Do List
+# Expense Tracker
 
-This is a simple to-do list web application built using HTML, CSS, and JavaScript. It allows you to keep track of your tasks and remove them when you're done with it.
+This is a web application built using HTML, CSS, and JavaScript that allows you to keep track of your expenses. It provides a user-friendly interface where you can add, edit, and delete expenses, helping you to manage your budget effectively.
 
 ## Table of Contents
 - [Demo](#demo)
 - [Features](#features)
+- [Acknowledgements](#acknowledgements)
 
 ## Demo
 
-A live demo of the application can be found https://kiandalevillareal.github.io/todo-list/ 
+A live demo of the application can be found 
 
 ## Features
 
-- Add new tasks to the to-do list.
-- Remove tasks from the list.
-- Edit the task from the list
+- Add your initial budget [on-going]
+- Add an expense to the list.
+- Edit the description of your expenses
+- Edit the amount spent on your expenses
+- Delete expenses
+- Compute your total expenses and your remaining budget [on-going]
 - Responsive design for mobile and desktop. [to follow]
+
+## Acknowledgements
+Special thanks to the Poppins font family and Font Awesome for their awesome fonts and icons used in the project.
