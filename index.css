@@ -37,7 +37,7 @@ header h1{
 	margin-bottom: 1rem;
 }
 
-#main-container {
+#form-container {
 	display: flex;
 }
 
@@ -144,7 +144,7 @@ main {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
-	padding: 1rem;
+	/* padding: 1rem; */
 }
 
 .task .content .task-wrapper .edit-task,
@@ -156,13 +156,14 @@ main {
 	-webkit-text-fill-color: transparent;
 	cursor: pointer;
 	margin: 0 0.5rem;
+	margin-right: 4rem;
 	transition: 0.4s;
 	font-size: 1.125rem;
 }
 
 .task .actions {
 	display: flex;
-	margin: 0 -0.5rem;
+	margin: 0 1rem;
 }
 
 .task .actions button:hover, 

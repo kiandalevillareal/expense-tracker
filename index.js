@@ -1,10 +1,10 @@
 window.addEventListener('load', () => {
-	const main = document.querySelector('#main-container');
+	const form = document.querySelector('#form-container');
 	const inputTask = document.querySelector('#input-task');
 	const inputAmount = document.querySelector('#input-amount');
 	const taskList = document.querySelector('#task-list');
 
-	main.addEventListener('submit', (e) => {
+	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
 		const task = inputTask.value;
@@ -48,8 +48,12 @@ window.addEventListener('load', () => {
 		editAmountButton.classList.add('edit-amount');
 		editAmountButton.innerHTML = '<i class="fas fa-edit"></i>';
 
+		const pesoSignEl = document.createElement('span');
+		pesoSignEl.textContent = '₱';
+
 		const amountWrapper = document.createElement('div');
 		amountWrapper.classList.add('amount-wrapper');
+		amountWrapper.append(pesoSignEl);
 		amountWrapper.append(inputAmountEl);
 		amountWrapper.append(editAmountButton);
 
