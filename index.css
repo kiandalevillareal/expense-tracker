@@ -71,7 +71,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	margin-right: .5rem;
 }
 
-#add-button, #compute-button {
+#add-button{
 	background-color: var(--oceanblue);
 	border-radius: .3rem;
 	padding: .5rem 1rem;
@@ -81,7 +81,7 @@ input[type="number"]::-webkit-outer-spin-button {
 	font-weight: 600;
 }
 
-#add-button:hover, #compute-button:hover {
+#add-button:hover {
 	transform: scale(1.05);
 	transition: .1s;
 }
@@ -100,11 +100,11 @@ main {
 .task-container .headers{
 	display: flex;
 	justify-content: space-between;
-	text-align: center;
+	padding: 0 1rem;
 }
 
 .task-container h2 {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	font-weight: 300;
 	color: var(--lightblue);
 	margin-bottom: 1rem;
@@ -143,8 +143,6 @@ main {
 .task .content .amount-wrapper{
 	display: flex;
 	justify-content: space-between;
-	width: 100%;
-	/* padding: 1rem; */
 }
 
 .task .content .task-wrapper .edit-task,

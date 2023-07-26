@@ -3,21 +3,17 @@ window.addEventListener('load', () => {
 	const inputTask = document.querySelector('#input-task');
 	const inputAmount = document.querySelector('#input-amount');
 	const taskList = document.querySelector('#task-list');
+	const totalSpent = document.querySelector('#total-spent');
+
+	let total = 0;
 
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
-		// const computeContainer = document.querySelector('#compute-container');
-		// const computeButton = document.createElement('input');
-		// computeButton.classList.add('compute-button');
-		// computeButton.type = 'button';
-		// computeButton.value = 'Compute';
-		// computeContainer.append(computeButton); 
-
 		const task = inputTask.value;
-		const amount = inputAmount.value;
+		var amount = parseFloat(inputAmount.value);
 
-		if(!task || !amount){
+		if(!task || isNaN(amount)){
 			alert("Please complete the input");
 			return;
 		}
@@ -76,12 +72,14 @@ window.addEventListener('load', () => {
 		taskContent.append(amountWrapper);
 		taskEl.append(taskContent);
 		taskList.append(taskEl);
-		// actions.append(editButton);
 		actions.append(deleteButton);
 		taskEl.append(actions);
 
 		inputTask.value = "";
 		inputAmount.value = "";
+
+		total += amount;
+		totalSpent.textContent = 'Total Spent: ₱' + total.toFixed(2);
 
 		editTaskButton.addEventListener('click', () => {
 			if (editTaskButton.innerHTML.toLowerCase().includes('edit')) {
