@@ -18,7 +18,7 @@ A live demo of the application can be found
 - Edit the description of your expenses
 - Edit the amount spent on your expenses
 - Delete expenses
-- Compute your total expenses and your remaining budget [on-going]
+- Compute your total expenses
 - Responsive design for mobile and desktop. [to follow]
 
 ## Acknowledgements
