@@ -7,6 +7,13 @@ window.addEventListener('load', () => {
 	form.addEventListener('submit', (e) => {
 		e.preventDefault();
 
+		// const computeContainer = document.querySelector('#compute-container');
+		// const computeButton = document.createElement('input');
+		// computeButton.classList.add('compute-button');
+		// computeButton.type = 'button';
+		// computeButton.value = 'Compute';
+		// computeContainer.append(computeButton); 
+
 		const task = inputTask.value;
 		const amount = inputAmount.value;
 
@@ -57,16 +64,13 @@ window.addEventListener('load', () => {
 		amountWrapper.append(inputAmountEl);
 		amountWrapper.append(editAmountButton);
 
+		// Actions
 		const actions = document.createElement('div');
 		actions.classList.add('actions');
 
 		const deleteButton = document.createElement('button');
 		deleteButton.classList.add('delete');
 		deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
-
-		const saveButton = document.createElement('button');
-		saveButton.classList.add('save');
-		saveButton.innerHTML = '<i class="fas fa-check-square"></i>';
 
 		taskContent.append(taskWrapper);
 		taskContent.append(amountWrapper);
@@ -103,7 +107,6 @@ window.addEventListener('load', () => {
 
 		deleteButton.addEventListener('click', () =>{
 			taskEl.remove();
-			console.log('test');
 		});
 	})	
 });
