@@ -24,6 +24,33 @@ body {
 	background-color: var(--dark);
 }
 
+/* .budget{
+	background: var(--darker);
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	z-index: 999;
+	text-align: center;
+	padding: 2rem;
+	border-radius: 1rem;
+}
+
+.budget > h2{
+	margin-bottom: 2rem;
+}
+
+.budget #input-budget{
+	flex: 1 1 0%;
+	background-color: var(--dark);
+	padding: .5rem 1rem;
+	border-radius: 1rem;
+	color: var(--light);
+	font-size: 1rem;
+} */
+
 header {
 	padding: 1rem;
 	max-width: 800px;

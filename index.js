@@ -1,4 +1,4 @@
-window.addEventListener('load', () => {
+// window.addEventListener('load', () => {
 	const form = document.querySelector('#form-container');
 	const inputTask = document.querySelector('#input-task');
 	const inputAmount = document.querySelector('#input-amount');
@@ -105,6 +105,8 @@ window.addEventListener('load', () => {
 
 		deleteButton.addEventListener('click', () =>{
 			taskEl.remove();
+			total -= amount;
+			totalSpent.textContent = 'Total Spent: ₱' + total.toFixed(2);
 		});
 	})	
-});
+// });
