@@ -9,7 +9,7 @@ This is a web application built using HTML, CSS, and JavaScript that allows you 
 
 ## Demo
 
-A live demo of the application can be found 
+A live demo of the application can be found here: https://kiandalevillareal.github.io/expense-tracker/
 
 ## Features
 
